@@ -8,13 +8,15 @@
       name="description"
       content="나의 걸음마, 너의 걸음마, 우리의 걸음마를 기억하는 편지"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
     <style>
+      @font-face {
+        font-family: "Nanum Songeulssi";
+        src: url("나눔손글씨.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
       :root {
         --paper-tile-size: clamp(120px, 16vw, 160px);
         --footprint-size: calc(var(--paper-tile-size) * 1.5);
@@ -46,8 +48,8 @@
         background-repeat: repeat;
         background-size: var(--paper-tile-size) var(--paper-tile-size);
         color: #332a22;
-        font-family: "Nanum Myeongjo", "Apple SD Gothic Neo", "Malgun Gothic",
-          serif;
+        font-family: "Nanum Songeulssi", "Apple SD Gothic Neo", "Malgun Gothic",
+          sans-serif;
       }
 
       main {
