@@ -16,10 +16,14 @@
     />
     <style>
       :root {
+        --paper-tile-size: clamp(120px, 16vw, 160px);
+        --footprint-size: calc(var(--paper-tile-size) * 1.2);
+
         color: #332a22;
         background-color: #f5efe2;
         background-image: url("paper.webp");
         background-repeat: repeat;
+        background-size: var(--paper-tile-size) var(--paper-tile-size);
       }
 
       * {
@@ -31,6 +35,7 @@
         background-color: #f5efe2;
         background-image: url("paper.webp");
         background-repeat: repeat;
+        background-size: var(--paper-tile-size) var(--paper-tile-size);
       }
 
       body {
@@ -39,6 +44,7 @@
         background-color: #f5efe2;
         background-image: url("paper.webp");
         background-repeat: repeat;
+        background-size: var(--paper-tile-size) var(--paper-tile-size);
         color: #332a22;
         font-family: "Nanum Myeongjo", "Apple SD Gothic Neo", "Malgun Gothic",
           serif;
@@ -52,7 +58,7 @@
 
       .footprint {
         display: block;
-        width: clamp(84px, 18vw, 136px);
+        width: var(--footprint-size);
         height: auto;
         margin: 0 0 34px;
       }
